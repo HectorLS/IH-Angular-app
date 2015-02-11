@@ -12,11 +12,21 @@ module.exports = function(grunt) {
         src: 'js/*.js',
         dest: 'build/main.min.js'
       }
+    },
+    sass: {
+      dist: {
+        files: {
+         'build/main.css':'scss/main.scss'
+        }
+      }
     }
   });
 
+
+  // Load the plugin that generates css from sass.
+  grunt.loadNpmTasks('grunt-contrib-sass');
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['uglify', 'sass']);
 };
