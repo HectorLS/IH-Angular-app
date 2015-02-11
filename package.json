@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Tibicenas/IH-Angular-app/issues"
   },
-  "homepage": "https://github.com/Tibicenas/IH-Angular-app"
+  "homepage": "https://github.com/Tibicenas/IH-Angular-app",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
