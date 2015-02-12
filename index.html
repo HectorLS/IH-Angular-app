@@ -3,10 +3,19 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>My First Angular App</title>
-		<link rel="stylesheet" href="css/style.css">
+
+		<!-- build:css bootstrap.min.css -->
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-		<script src="bower_components/angular/angular.js"></script>
+		<!-- /build -->
+
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.12/angular.min.js"></script>
+		
+		<!-- build:js main.min.js -->
+		<script src="bower_components/bower-tinder-js/ajax.js"></script>
+		<script src="bower_components/bower-tinder-js/query.js"></script>
+		<script src="bower_components/bower-tinder-js/storage.js"></script>
 		<script src="js/controllers.js"></script>
+		<!-- /build -->
 	</head>
 	<body ng-controller="PeopleListCtrl">
 	  <div class="container">
